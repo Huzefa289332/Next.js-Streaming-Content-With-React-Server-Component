@@ -12,6 +12,7 @@ export default async function Home() {
         key={snippet.id}
       >
         <div>{snippet.title}</div>
+
         <div>View</div>
       </Link>
     );
@@ -21,10 +22,12 @@ export default async function Home() {
     <div>
       <div className="flex m-2 justify-between items-center">
         <h1 className="text-xl font-bold">Snippets</h1>
+
         <Link href="/snippets/new" className="border p-2 border rounded">
           New
         </Link>
       </div>
+
       <div className="flex flex-col gap-2">{renderedSnippets}</div>
     </div>
   );
